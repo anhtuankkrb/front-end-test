@@ -26,7 +26,7 @@
 <template>
     <div id="delete-modal" @mousedown="deleteProductStore.closeModal()" tabindex="-1"
         :class="{ hidden: !deleteProductStore.deleteProductModalStatus }"
-        class="bg-[rgba(0,0,0,0.5)] overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full flex justify-center items-center">
+        class="bg-[rgba(0,0,0,0.5)] overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[100vh] flex justify-center items-center">
         <div class="relative p-4 w-full max-w-md max-h-full" @mousedown.stop="">
             <div class="relative bg-white rounded-lg shadow-sm">
                 <button type="button" @click.prevent="deleteProductStore.closeModal()"
